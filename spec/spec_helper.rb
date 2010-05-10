@@ -1,5 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+require 'ruport_report_builder'
+require 'sqlite3'
 require 'spec'
 require 'spec/autorun'
 

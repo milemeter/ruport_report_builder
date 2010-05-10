@@ -9,8 +9,11 @@ begin
     gem.description = %Q{TODO: longer description of your gem}
     gem.email = "doug.bryant@milemeter.com"
     gem.homepage = "http://github.com/milemeter/ruport_report_builder"
-    gem.authors = ["netinlet", "riney"]
+    gem.authors = ["Doug Bryant", "John Riney"]
+    gem.add_dependency('ruport', '>= 1.4.0')
+    gem.add_dependency('activerecord', '>= 2.0.0')
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency 'sqlite3-ruby' 
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -39,7 +42,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "Inc. #{version}"
+  rdoc.title = "Ruport Report Builder #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

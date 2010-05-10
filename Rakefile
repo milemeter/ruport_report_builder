@@ -5,16 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "ruport_report_builder"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "doug.bryant@milemeter.com"
+    gem.summary = %Q{Simple wrapper for common ruport tasks}
+    gem.description = %Q{Simple wrapper for common ruport tasks}
+    gem.email = "code@milemeter.com"
     gem.homepage = "http://github.com/milemeter/ruport_report_builder"
     gem.authors = ["Doug Bryant", "John Riney"]
     gem.add_dependency('ruport', '>= 1.4.0')
     gem.add_dependency('activerecord', '>= 2.0.0')
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency 'sqlite3-ruby' 
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
